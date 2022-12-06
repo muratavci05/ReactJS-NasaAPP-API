@@ -17,9 +17,10 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path="/nasa-photo" element={<NasaData/>}/>
+      <Route path="/footer" element={<Footer/>}/>
     </Routes>
     
-    <Footer/>
+    
     </BrowserRouter>
   );
 }

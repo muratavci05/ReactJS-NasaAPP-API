@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./style/style.css"
+import "./style/style.css";
 
 const NasaData = () => {
   const [photoData, setPhotoData] = useState(null);
@@ -7,8 +7,10 @@ const NasaData = () => {
   useEffect(() => {
     fetchPhoto();
     async function fetchPhoto() {
+      const api_Key = "XiSafrU5DQRwEf2j2SPbdK34W8IiGX56m7DzGFoR";
+
       const res = await fetch(
-        `https://api.nasa.gov/planetary/apod?api_key=Djvk0izcCaS7jkIWmRyhXx01lm7fLOvXnWdVoG5O`
+        `https://api.nasa.gov/planetary/apod?api_key=${api_Key}`
       );
 
       const data = await res.json();
@@ -21,17 +23,15 @@ const NasaData = () => {
 
   return (
     <React.Fragment>
-      <div className="container" >
+      <div className="container">
         <div className="containerMain">
           <img
-          className="containerAPIimg"
-            
+            className="containerAPIimg"
             src={photoData.url}
             alt={photoData.data}
           />
         </div>
-        <div className="explanationInfo"
-        >
+        <div className="explanationInfo">
           <h1 className="hd">{photoData.title}</h1>
           <h3 className="dt">{photoData.date}</h3>
           <p className="desc">{photoData.explanation}</p>
