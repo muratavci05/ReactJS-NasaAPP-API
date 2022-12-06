@@ -33,8 +33,9 @@ if (!photoData) return <div/>;
                 />
             </div>
             <h1>{photoData.title}</h1>
-            <h3>{photoData.explanation}</h3>
-            <h2>{photoData.hdurl}</h2>
+            <h3>{photoData.date}</h3>
+            <p>{photoData.explanation}</p>
+            <h6>{photoData.hdurl}</h6>
         </React.Fragment>
     )
 }
