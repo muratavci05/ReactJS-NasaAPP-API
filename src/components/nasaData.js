@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./style/style.css"
 
 const NasaData = () => {
   const [photoData, setPhotoData] = useState(null);
@@ -20,23 +21,21 @@ const NasaData = () => {
 
   return (
     <React.Fragment>
-      <div style={{ display: "flex" }}>
-        <div>
+      <div className="container" >
+        <div className="containerMain">
           <img
-            style={{
-              border: "1px solid black",
-              width: "600px",
-              height: "auto",
-            }}
+          className="containerAPIimg"
+            
             src={photoData.url}
             alt={photoData.data}
           />
         </div>
-        <div style={{ border: "1px solid blue" }}>
-          <h1>{photoData.title}</h1>
-          <h3>{photoData.date}</h3>
-          <p>{photoData.explanation}</p>
-          <h6>{photoData.hdurl}</h6>
+        <div className="explanationInfo"
+        >
+          <h1 className="hd">{photoData.title}</h1>
+          <h3 className="dt">{photoData.date}</h3>
+          <p className="desc">{photoData.explanation}</p>
+          <h6 className="lnk">{photoData.hdurl}</h6>
         </div>
       </div>
     </React.Fragment>

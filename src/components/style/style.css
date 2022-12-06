@@ -1,0 +1,38 @@
+/* nasaData style */
+
+.container{
+    display: flex;
+    border: 1px solid blue;
+}
+
+.containerAPIimg{
+    border: 1px solid black;
+    width: 800px;
+    height: 100%;
+    border: 1px solid rgb(17, 149, 79);
+    
+
+}
+
+.explanationInfo{
+    border: 1px solid blue;
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    
+}
+.hd{
+    color: rgb(231, 115, 27);
+
+}
+
+.desc{
+    color: rgb(103, 83, 52);
+}
+.lnk{
+    color: grey;
+    font-size: 10px;
+    margin-left: 3px;
+}
+
+/* nasaData style end */
