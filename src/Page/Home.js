@@ -1,6 +1,5 @@
 import React from "react";
 import Main from "../components/index.js";
-import NasaData from "../components/nasaData.js";
 
 
 const Home = () => {
