@@ -8,7 +8,7 @@
 .containerAPIimg{
     border: 1px solid black;
     width: 800px;
-    height: 100%;
+    height: 100vh;
     border: 1px solid rgb(17, 149, 79);
     
 
@@ -36,3 +36,24 @@
 }
 
 /* nasaData style end */
+/* Mars style start */
+
+.Image{
+    margin-top: 60px;
+    
+}
+.Image img{
+    margin-top: 60px;
+    
+}
+.MarsText{
+    margin-left: 20px;
+}
+.MarsText .copyright{
+    color: gray;
+}
+
+.MarsText .title{
+    color: rgb(109, 109, 239);
+
+}
