@@ -38,22 +38,32 @@
 /* nasaData style end */
 /* Mars style start */
 
-.Image{
-    margin-top: 60px;
-    
+.card{
+    margin-top: -10px;
 }
-.Image img{
-    margin-top: 60px;
-    
+.col{
+    margin-left: 75px;
 }
-.MarsText{
-    margin-left: 20px;
-}
+
+
 .MarsText .copyright{
     color: gray;
+    font-size: 12px;
 }
 
 .MarsText .title{
     color: rgb(109, 109, 239);
+    font-size: 12px;
 
+}
+.MarsText button{
+    margin-top: 15px;
+}
+
+.btn-group{
+    margin-button: -5px;
+}
+.image{
+    margin-left: 100px;
+    
 }
