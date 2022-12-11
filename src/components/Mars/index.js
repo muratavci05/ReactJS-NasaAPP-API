@@ -23,14 +23,14 @@ const Mars = (props) => {
 
   return (
     <React.Fragment>
-      <div className="container">
-        <div className="row row-cols-6 row-cols-md-4 g-3">
+      <div className="container bg-dark" >
+        <div className="row row-cols-6 row-cols-md-4 g-3 bg-dark">
           {apod.map((item, index) => {
             return (
-              <div key={index} className="col">
-                <div className="card shadow-sm">
-                  <div className="Image" style={{marginLeft:"80px"}}>
-                    <Image 
+              <div key={index} className="col bg-dark">
+                <div className="card shadow-sm bg-dark">
+                  <div className="Image bg-dark" style={{marginLeft:"80px"}}>
+                    <Image className="bg-dark" 
                     width={150} height={150} src={item.hdurl} />
                   </div>
                   <div className="MarsText" style={{marginLeft:"80px"}}>
