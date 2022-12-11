@@ -5,6 +5,7 @@ import { Image } from "antd";
 const Mars = (props) => {
   const [apod, setApod] = useState([]);
 
+  //nasa apod api
   useEffect(() => {
     const count = 20;
     const apiKey = "QEqJuF17YEpNksxMBoIn16iJS67hKVicRUrfEq0m";
@@ -29,10 +30,12 @@ const Mars = (props) => {
             return (
               <div key={index} className="col bg-dark">
                 <div className="card shadow-sm bg-dark">
+
                   <div className="Image bg-dark" style={{marginLeft:"80px"}}>
                     <Image className="bg-dark" 
                     width={150} height={150} src={item.hdurl} />
                   </div>
+
                   <div className="MarsText" style={{marginLeft:"80px"}}>
                     <h4 className="copyright">{item.copyright}</h4>
                     <h4 className="title">
