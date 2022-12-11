@@ -37,14 +37,19 @@ const Mars = (props) => {
                   </div>
 
                   <div className="MarsText" style={{marginLeft:"80px"}}>
-                    <h4 className="copyright">{item.copyright}</h4>
+                    <h4 className="copyright">copyright: {item.copyright}</h4>
                     <h4 className="title">
                       <span>*</span>
                       {item.title}
                     </h4>
                     <div className="btn-group">
-                  <button type="button" className="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" 
+                  className="btn btn-secondary btn-sm" 
+                  data-bs-toggle="modal" 
+                  data-bs-target="#staticBackdrop">
+                View</button>
                 </div>
+              
                     {/* <p className="explanation">{item.explanation}</p> */}
                   </div>
                 </div>

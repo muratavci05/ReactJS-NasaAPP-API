@@ -5,6 +5,7 @@ import Header from "./components/header.js";
 import Footer from "./components/footer.js";
 import NasaData from "./components/nasaData.js";
 import MarsDataPage from "./Page/Mars.js";
+import DetailApod from "./components/Mars/detailApod.js";
 
 
 
@@ -18,7 +19,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/nasa-photo" element={<NasaData />} />
-        <Route path="/mars-data" element={<MarsDataPage/>}/>
+        <Route path="/nasa-apod" element={<MarsDataPage/>}/>
+        <Route path="/detail-apod" element={<DetailApod/>}/>
         
         
       </Routes>
