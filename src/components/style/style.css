@@ -1,4 +1,4 @@
-/* nasaData style */
+/* nasaData | detailApod style */
 
 .container{
     display: flex;
@@ -54,7 +54,6 @@
 .MarsText .title{
     color: rgb(109, 109, 239);
     font-size: 12px;
-
 }
 .MarsText button{
     margin-top: 15px;

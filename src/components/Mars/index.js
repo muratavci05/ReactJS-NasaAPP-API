@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Image } from "antd";
+import { Link } from "react-router-dom";
 
 const Mars = (props) => {
   const [apod, setApod] = useState([]);
@@ -24,32 +25,43 @@ const Mars = (props) => {
 
   return (
     <React.Fragment>
-      <div className="container bg-dark" >
+      <div className="container bg-dark">
         <div className="row row-cols-6 row-cols-md-4 g-3 bg-dark">
           {apod.map((item, index) => {
             return (
               <div key={index} className="col bg-dark">
                 <div className="card shadow-sm bg-dark">
-
-                  <div className="Image bg-dark" style={{marginLeft:"80px"}}>
-                    <Image className="bg-dark" 
-                    width={150} height={150} src={item.hdurl} />
+                  <div className="Image bg-dark" style={{ marginLeft: "80px" }}>
+                    <Image
+                      className="bg-dark"
+                      width={150}
+                      height={150}
+                      src={item.hdurl}
+                    />
                   </div>
 
-                  <div className="MarsText" style={{marginLeft:"80px"}}>
+                  <div className="MarsText" style={{ marginLeft: "80px" }}>
                     <h4 className="copyright">copyright: {item.copyright}</h4>
                     <h4 className="title">
                       <span>*</span>
                       {item.title}
                     </h4>
-                    <div className="btn-group">
-                  <button type="button" 
-                  className="btn btn-secondary btn-sm" 
-                  data-bs-toggle="modal" 
-                  data-bs-target="#staticBackdrop">
-                View</button>
-                </div>
-              
+
+                    <div className="btnC">
+                      <div className="btn-group">
+                        <Link
+                          type="button"
+                          className="btn btn-outline-secondary btn-sm "
+                          data-bs-toggle="modal"
+                          data-bs-target="#staticBackdrop"
+                          to={"/detail-apod"}
+
+                        >
+                          View
+                        </Link>
+                      </div>
+                    </div>
+
                     {/* <p className="explanation">{item.explanation}</p> */}
                   </div>
                 </div>
