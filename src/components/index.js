@@ -6,7 +6,7 @@ const Main = () => {
     return(
         <React.Fragment>
             <div>
-                burası home
+                <p style={{color:"white"}}>Burası Home sayfası</p> 
             </div>
         </React.Fragment>
 

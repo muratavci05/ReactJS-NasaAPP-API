@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Image } from "antd";
-import { Link } from "react-router-dom";
+import { Image} from "antd";
 
 const Mars = (props) => {
   const [apod, setApod] = useState([]);
+  
+
 
   //nasa apod api
   useEffect(() => {
-    const count = 20;
+    const count = 100;
     const apiKey = "QEqJuF17YEpNksxMBoIn16iJS67hKVicRUrfEq0m";
     axios
       .get(
@@ -23,6 +24,7 @@ const Mars = (props) => {
       });
   }, []);
 
+    
   return (
     <React.Fragment>
       <div className="container bg-dark">
@@ -31,7 +33,10 @@ const Mars = (props) => {
             return (
               <div key={index} className="col bg-dark">
                 <div className="card shadow-sm bg-dark">
-                  <div className="Image bg-dark" style={{ marginLeft: "80px" }}>
+                  <div
+                    className="Image bg-dark IMG-"
+                    style={{ marginLeft: "80px" }}
+                  >
                     <Image
                       className="bg-dark"
                       width={150}
@@ -41,7 +46,13 @@ const Mars = (props) => {
                   </div>
 
                   <div className="MarsText" style={{ marginLeft: "80px" }}>
-                    <h4 className="copyright">copyright: {item.copyright}</h4>
+                    
+                    <h4 className="copyright">copyright: {item.copyright}
+                    <h6 style={{
+                      fontSize:"12px",
+                      color:"white",
+                      marginTop:"10px"
+                    }}>{item.date}</h6></h4>
                     <h4 className="title">
                       <span>*</span>
                       {item.title}
@@ -49,16 +60,15 @@ const Mars = (props) => {
 
                     <div className="btnC">
                       <div className="btn-group">
-                        <Link
-                          type="button"
-                          className="btn btn-outline-secondary btn-sm "
-                          data-bs-toggle="modal"
-                          data-bs-target="#staticBackdrop"
-                          to={"/detail-apod"}
 
-                        >
+                        {/* <button
+                          type="button"
+                          className="btn btn-outline-secondary btn-sm"
+                          data-toggle="modal"
+                          data-target=".bd-example-modal-lg"
+                        > 
                           View
-                        </Link>
+                        </button> */}
                       </div>
                     </div>
 
