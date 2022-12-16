@@ -1,2 +1,41 @@
 @import "./Variables/variables";
 @import "./media-queries";
+
+
+.skip-to-content {
+    position: absolute;
+    z-index: 9999;
+    background: $clr-white;
+    color: $clr-dark;
+    padding: 0.5rem 1rem;
+    margin-inline: auto;
+    transform: translateY(-101%);
+    transition: transform 0.2s ease-in;
+
+    &:focus{
+        transform: translateY(0);
+    }
+
+}
+.primary-header{
+    justify-content: space-between;
+    align-items: center;
+
+@include desktop {
+    &::after {
+        content: "";
+        display: block;
+        position: relative;
+        height: 1px;
+        width: 45%;
+        margin-right: -2.5rem;
+        background: hsla(0, 0%, 100, 0.25);
+        order: 1;
+     }
+}
+
+}
+
+
+
+

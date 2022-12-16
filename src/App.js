@@ -5,7 +5,7 @@ import Header from "./components/header.js";
 import Footer from "./components/footer.js";
 import NasaData from "./components/nasaData.js";
 import MarsDataPage from "./Page/Mars.js";
-
+import "./styles/App.css";
 
 
 function App() {
