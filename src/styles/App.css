@@ -1,4 +1,44 @@
 .skip-to-content {
   position: absolute;
   z-index: 9999;
-}/*# sourceMappingURL=app.css.map */
+  background: #fff;
+  color: #0b0d17;
+  padding: 0.5rem 1rem;
+  margin-inline: auto;
+  transform: translateY(-101%);
+  transition: transform 0.2s ease-in;
+}
+.skip-to-content:focus {
+  transform: translateY(0);
+}
+
+.primary-header {
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 780px) {
+  .primary-header::after {
+    content: "";
+    display: block;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+/* set up the body *//*# sourceMappingURL=app.css.map */

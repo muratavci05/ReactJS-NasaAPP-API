@@ -1,0 +1,14 @@
+@mixin desktop {
+    @media screen and (min-width: 780px) {
+        //whatever i pass in here will be getting the styles at that particular breakpoint
+        @content;
+    }
+       
+}
+@mixin tablet {
+    @media screen and (min-width:560px) {
+        //whatever i pass in here will be getting the styles at that particular breakpoint
+        @content;
+    }
+    
+}

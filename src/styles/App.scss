@@ -1,1 +1,58 @@
 @import "navbar";
+@import "./Variables/variable";
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+/* set up the body */
+body {
+    font-family: $ff-sans-normal;
+    font-size: $fs-400;
+    color: $clr-white;
+    background-color: $clr-dark;
+    line-height: 1.5;
+}
+
+img,
+picture {
+    max-width: 73%;
+    display: block;
+    margin-inline: auto;
+    transition: opacity 0.5s ease-in-out;
+    // transform: translateX(-30%);
+    @include desktop{
+        max-width: 93%;
+    }
+}
+
+article {
+    transform: translateX(0);
+    transition: opacity 0.8s ease-in-out, transform 1s ease-in-out;
+}
+
+/* make form elements easier to work with */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+

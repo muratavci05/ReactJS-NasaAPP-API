@@ -1,4 +1,5 @@
-@import "./Variables/";
+@import "./Variables/variable";
+@import "./media-queries";
 
 .skip-to-content {
     position: absolute;
@@ -12,5 +13,17 @@
 
     &:focus {
         transform: translateY(0);
+    }
+}
+
+.primary-header {
+    justify-content: space-between;
+    align-items: center;
+
+    @include desktop {
+        &::after {
+            content: "";
+            display: block;
+        }
     }
 }
