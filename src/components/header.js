@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assents/shared/nasa-logo.svg";
 import { NavLink } from "react-router-dom";
+import "../styles/app.css";
 
 const Header = (props) => {
   const [openLinks, setOpenLinks] = useState(false); //mobile for responsive
