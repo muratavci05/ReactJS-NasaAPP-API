@@ -12,11 +12,12 @@ const Header = (props) => {
 
   return (
     <React.Fragment>
+              <a href="#main" className="skip-to-content">Skip to content</a>
+
       <header className="primary-header flex">
-        <a href="#main" className="skip-to-content">Skip to content</a>
 
         <div>
-          <img src={logo} />
+          <img src={logo} alt="Nasa Apod" className="logo"/>
         </div>
 
         <button

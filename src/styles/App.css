@@ -174,6 +174,103 @@ ul.primary-navigation {
 /* colors */
 /* font-sizes */
 /* font-families */
+/* general */
+.page-wrap {
+  display: grid;
+  grid-template-rows: -webkit-min-content 1fr;
+  grid-template-rows: min-content 1fr;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.d-block {
+  display: block;
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: 1rem;
+}
+
+.flow--space-small > *:where(:not(:first-child)) {
+  margin-top: 0.75rem;
+}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+.grid-container {
+  text-align: center;
+  display: grid;
+  place-items: center;
+  padding-inline: 1rem;
+  padding-bottom: 4rem;
+}
+@media screen and (min-width: 780px) {
+  .grid-container {
+    text-align: left;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    grid-template-columns: minmax(2rem, 1fr) repeat(2, minmax(0px, 80rem)) minmax(2rem, 1fr);
+  }
+}
+
+.page-info {
+  max-width: 459px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
+
+/* colors */
+.bg-dark {
+  background-color: #0b0d17;
+}
+
+.bg-accent {
+  background-color: #d0d6f9;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.text-dark {
+  color: #0b0d17;
+}
+
+.text-accent {
+  color: #d0d6f9;
+}
+
+.text-white {
+  color: #fff;
+}
+
 *,
 *::before,
 *::after {

@@ -5,10 +5,9 @@ import Header from "./components/header.js";
 import Footer from "./components/footer.js";
 import NasaData from "./components/nasaData.js";
 import MarsDataPage from "./Page/Mars.js";
-import "./styles/app.css";
 
 
-function App() {
+function App(props) {
 
   
 
