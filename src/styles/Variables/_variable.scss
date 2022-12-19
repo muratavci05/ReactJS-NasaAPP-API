@@ -1,2 +1,34 @@
+@import "../media-queries";
+
+/* colors */
 $clr-dark: #0b0d17;
+$clr-light: #d0d6f9;
 $clr-white: #fff;
+$test-white: #fff;
+
+/* font-sizes */
+$fs-900: calc(clamp(5rem, 17vw, 9.375rem));
+$fs-800: 3.5rem;
+$fs-700: 1.5rem;
+$fs-600: 1rem;
+$fs-500: 1rem;
+$fs-400: 0.9375rem;
+$fs-300: 1rem;
+$fs-200: 0.875rem;
+
+$fs-800-lg: 5rem;
+$fs-700-lg: 2.5rem;
+$fs-600-lg: 1.5rem;
+$fs-500-lg: 1.25rem;
+$fs-400-lg: 1rem;
+
+$fs-800-xlg: 6.25rem;
+$fs-700-xlg: calc(min(calc(1.5rem + 2.5vw), 3.5rem));
+$fs-600-xlg: 2rem;
+$fs-500-xlg: 1.75rem;
+$fs-400-xlg: calc(min(calc(0.8rem + 0.5vw), 1.125rem));
+
+/* font-families */
+$ff-serif: "Bellefair", serif;
+$ff-sans-cond: "Barlow Condensed", sans-serif;
+$ff-sans-normal: "Barlow", sans-serif;

@@ -1,3 +1,6 @@
+/* colors */
+/* font-sizes */
+/* font-families */
 .skip-to-content {
   position: absolute;
   z-index: 9999;
@@ -20,9 +23,157 @@
   .primary-header::after {
     content: "";
     display: block;
+    position: relative;
+    height: 1px;
+    width: 45%;
+    margin-right: -2.5rem;
+    background: hsla(0deg, 0%, 100%, 0.25);
+    order: 1;
   }
 }
 
+nav {
+  order: 2;
+}
+
+.logo {
+  margin: 0rem clamp(1.5rem, 5vw, 3.5rem);
+  width: 40px;
+}
+@media (max-width: 560px) {
+  .logo {
+    margin: 24px clamp(1.5rem, 5vw, 3.5rem);
+  }
+}
+@media screen and (min-width: 560px) {
+  .logo {
+    width: auto;
+  }
+}
+
+ul.primary-navigation {
+  gap: clamp(1.5rem, 7vw, 3.3rem);
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+  align-items: center;
+  background: hsla(0deg, 0%, 100%, 0.2);
+  transition: transform 0.5s ease-in-out;
+}
+@supports ((-webkit-backdrop-filter: blur 20px) or (backdrop-filter: blur 20px)) {
+  ul.primary-navigation {
+    background: hsla(0deg, 0%, 100%, 0.1);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+  }
+}
+@media screen and (min-width: 560px) {
+  ul.primary-navigation {
+    padding: 0 calc clamp(3rem, 7vw, 7rem);
+  }
+}
+@media (max-width: 560px) {
+  ul.primary-navigation {
+    gap: 0.5rem;
+    padding: min(20rem, 18vh) 2rem;
+    align-items: flex-start;
+    position: fixed;
+    flex-direction: column;
+    inset: 0 0 0 32%;
+    z-index: 1000;
+    transform: translate(0%);
+  }
+  ul.primary-navigation.hidden {
+    transform: translate(100%);
+  }
+}
+@media (min-width: 560px) and (max-width: 780px) {
+  ul.primary-navigation {
+    padding-inline: 3rem;
+  }
+}
+@media screen and (min-width: 780px) {
+  ul.primary-navigation {
+    margin-block: 2rem;
+  }
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+@media (max-width: 560px) {
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 2000;
+    right: 1rem;
+    top: 2rem;
+    background: transparent;
+    border: 0;
+    background-position: center center;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: background-image 0.5s ease;
+  }
+  .mobile-nav-toggle.open {
+    background-image: url(../assents/shared/icon-hamburger.svg);
+  }
+  .mobile-nav-toggle.close {
+    background-image: url(../assents/shared/icon-close.svg);
+  }
+}
+
+.primary-navigation li {
+  width: 100%;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+  display: block;
+}
+
+.primary-navigation a > span {
+  font-weight: 700;
+  margin-right: 0.5em;
+}
+@media (min-width: 560px) and (max-width: 780px) {
+  .primary-navigation a > span {
+    display: none;
+  }
+}
+
+/* direct descendent just to make sure style doesn't leak out -  */
+.underline-indicator {
+  padding: 2.2rem 0;
+  border: 0;
+  border-bottom: 0.2rem solid hsla(0deg, 0%, 100%, 0);
+  transition: border 0.5s ease;
+  background: 0;
+}
+@media (max-width: 560px) {
+  .underline-indicator {
+    padding: 0.5rem 0;
+  }
+}
+
+.underline-indicator:hover,
+.underline-indicator:focus {
+  border-color: hsla(0deg, 0%, 100%, 0.5);
+}
+
+@media screen and (min-width: 560px) {
+  .underline-indicator.active,
+.underline-indicator[aria-selected=true] {
+    color: hsl(0deg, 0%, 100%);
+    border-color: hsl(0deg, 0%, 100%);
+  }
+}
+
+/* colors */
+/* font-sizes */
+/* font-families */
 *,
 *::before,
 *::after {
@@ -41,4 +192,38 @@ p {
   font-weight: 400;
 }
 
-/* set up the body *//*# sourceMappingURL=app.css.map */
+/* set up the body */
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.9375rem;
+  color: #fff;
+  background-color: #0b0d17;
+  line-height: 1.5;
+}
+
+img,
+picture {
+  max-width: 73%;
+  display: block;
+  margin-inline: auto;
+  transition: opacity 0.5s ease-in-out;
+}
+@media screen and (min-width: 780px) {
+  img,
+picture {
+    max-width: 93%;
+  }
+}
+
+article {
+  transform: translateX(0);
+  transition: opacity 0.8s ease-in-out, transform 1s ease-in-out;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}/*# sourceMappingURL=app.css.map */
