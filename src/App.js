@@ -3,8 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Page/Home.js";
 import Header from "./components/header.js";
 import Footer from "./components/footer.js";
-import NasaData from "./components/nasaData.js";
-import MarsDataPage from "./Page/Mars.js";
+import NasaData from "./components/NasaAPI/nasaData.js";
+import MarsDataPage from "./Page/Nasa.js";
 
 
 function App(props) {

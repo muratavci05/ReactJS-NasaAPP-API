@@ -1,5 +1,5 @@
 import React from "react";
-import Mars from "../components/Mars";
+import Mars from "../components/NasaAPI";
 
 const MarsDataPage = (props)=>{
 

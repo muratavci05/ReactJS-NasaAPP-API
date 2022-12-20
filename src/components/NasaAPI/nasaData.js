@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./style/style.css";
+import "../style/style.css";
 
 const NasaData = () => {
   const [photoData, setPhotoData] = useState(null);

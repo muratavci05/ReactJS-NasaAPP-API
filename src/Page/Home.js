@@ -1,20 +1,14 @@
 import React from "react";
-import Main from "../components/index.js";
+import Main from "../components/Home/index.js";
 
 
 const Home = () => {
 
     return(
         <React.Fragment>
-            <div>
-                <Main/>
-                
-            </div>
-            <div>
             
-
-            </div>
-          
+                <Main/>
+            
         </React.Fragment>
     )
 }

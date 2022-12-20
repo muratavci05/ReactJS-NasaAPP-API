@@ -174,6 +174,78 @@ ul.primary-navigation {
 /* colors */
 /* font-sizes */
 /* font-families */
+.home {
+  background-image: url(../assents/home/background-home-mobile.jpg);
+}
+@media screen and (min-width: 560px) {
+  .home {
+    background-image: url(../assents/home/background-home-tablet.jpg);
+    background-position: center center;
+  }
+}
+@media screen and (min-width: 780px) {
+  .home {
+    background-image: url(../assents/home/background-home-desktop.jpg);
+  }
+}
+.home h1 {
+  letter-spacing: 2.7px;
+  margin: 0 auto;
+}
+.home h1 span {
+  margin: 18px 0;
+}
+@media screen and (min-width: 560px) {
+  .home h1 {
+    letter-spacing: 3.38px;
+  }
+}
+@media screen and (min-width: 780px) {
+  .home h1 {
+    letter-spacing: 4.72px;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .grid-container--home {
+    /* takes bigger of the two values */
+    padding-bottom: max(6rem, 20vh);
+    align-items: end;
+    /* set which column they are */
+  }
+  .grid-container--home > *:first-child {
+    grid-column: 2;
+  }
+  .grid-container--home > *:last-child {
+    grid-column: 3;
+  }
+}
+
+.large-button {
+  font-size: 1.25rem;
+  display: inline-grid;
+  place-items: center;
+  padding: 0 2em;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  text-decoration: none;
+}
+@media screen and (min-width: 560px) {
+  .large-button {
+    font-size: 2rem;
+  }
+}
+
+.hover-effect {
+  transition: box-shadow 0.5s ease-out;
+}
+.hover-effect:hover, .hover-effect:focus {
+  box-shadow: 0px 0px 0px 2.5rem hsla(0deg, 0%, 100%, 0.1);
+}
+
+/* colors */
+/* font-sizes */
+/* font-families */
 /* general */
 .page-wrap {
   display: grid;
@@ -271,6 +343,139 @@ ul.primary-navigation {
   color: #fff;
 }
 
+/* typography */
+.ff-serif {
+  font-family: "Bellefair", serif;
+}
+
+.ff-sans-cond {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.ff-sans-normal {
+  font-family: "Barlow", sans-serif;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 4.75px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2.7px;
+}
+
+.letter-spacing-3 {
+  letter-spacing: 2.35px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-900 {
+  font-size: clamp(5rem, 17vw, 9.375rem);
+}
+
+.fs-800 {
+  font-size: 3.5rem;
+}
+@media screen and (min-width: 560px) {
+  .fs-800 {
+    font-size: 5rem;
+  }
+}
+@media screen and (min-width: 780px) {
+  .fs-800 {
+    font-size: 6.25rem;
+  }
+}
+
+.fs-600 {
+  font-size: 1rem;
+  /* 
+  @include tablet {
+  	font-size: $fs-600-lg;
+  }
+  @include desktop {
+  	font-size: $fs-600-xlg;
+  }
+   */
+}
+
+.fs-550 {
+  font-size: 1rem;
+}
+
+.fs-500 {
+  font-size: 1rem;
+}
+@media screen and (min-width: 560px) {
+  .fs-500 {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 780px) {
+  .fs-500 {
+    font-size: 1.75rem;
+  }
+}
+
+.fs-400 {
+  font-size: 0.9375rem;
+}
+@media screen and (min-width: 560px) {
+  .fs-400 {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 780px) {
+  .fs-400 {
+    font-size: min(0.8rem + 0.5vw, 1.125rem);
+  }
+}
+
+.fs-200 {
+  font-size: 0.875rem;
+}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+  line-height: 1.1;
+}
+
+.numbered-title {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+}
+@media screen and (min-width: 560px) {
+  .numbered-title {
+    letter-spacing: 3.38px;
+    justify-self: start;
+    margin-top: 2rem;
+  }
+}
+@media screen and (min-width: 780px) {
+  .numbered-title {
+    letter-spacing: 4.72px;
+  }
+}
+@media (min-width: 560px) and (max-width: 780px) {
+  .numbered-title {
+    margin-bottom: 1.75rem;
+  }
+}
+
+.numbered-title span {
+  margin-right: 0.5em;
+  font-weight: 700;
+  color: 1rem;
+  opacity: 0.25;
+}
+
+/* Components >>>  */
 *,
 *::before,
 *::after {
