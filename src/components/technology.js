@@ -1,5 +1,4 @@
 import React, { useState} from "react";
-import Data from "../db.json/";
 import Vehicle_portrait from "../assents/technology/image-launch-vehicle-portrait.jpg";
 import Vehicle_landscape from "../assents/technology/image-launch-vehicle-landscape.jpg";
 import Capsule_portrait from "../assents/technology/image-space-capsule-portrait.jpg";
@@ -7,8 +6,11 @@ import Capsule_landscape from "../assents/technology/image-space-capsule-landsca
 import Spaceport_portrait from "../assents/technology/image-spaceport-portrait.jpg";
 import Spaceport_landscape from "../assents/technology/image-spaceport-landscape.jpg";
 import "../styles/app.css";
+import Data from "../db.json";
+
 
 const Technology = (props) => {
+	
 	
 	const [tabFocus, settabFocus] = useState(0);
 
@@ -100,11 +102,11 @@ const Technology = (props) => {
 				</p>
 			</article>
 			<div className="picture" style={animation ? { opacity: "0" } : null}>
-				<img
+				{/* <img
 					className="landscape"
 					src={currentImage.landscape}
 					alt={Data.technology[clicked].name}
-				/>
+				/> */}
 				<img
 					className="portrait"
 					src={currentImage.portrait}

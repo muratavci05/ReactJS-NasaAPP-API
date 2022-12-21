@@ -274,3 +274,6 @@
 	color: $clr-dark;
 	background-color: $clr-white;
 }
+.number-selectors > button:hover {
+	border: 1px solid $clr-white;
+}
