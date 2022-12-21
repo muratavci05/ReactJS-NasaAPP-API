@@ -1,12 +1,12 @@
-import React, { useState,useEffect } from "react";
-import Data from "../db.json";
+import React, { useState} from "react";
+import Data from "../db.json/";
 import Vehicle_portrait from "../assents/technology/image-launch-vehicle-portrait.jpg";
 import Vehicle_landscape from "../assents/technology/image-launch-vehicle-landscape.jpg";
 import Capsule_portrait from "../assents/technology/image-space-capsule-portrait.jpg";
 import Capsule_landscape from "../assents/technology/image-space-capsule-landscape.jpg";
 import Spaceport_portrait from "../assents/technology/image-spaceport-portrait.jpg";
 import Spaceport_landscape from "../assents/technology/image-spaceport-landscape.jpg";
-import "..styles/app.css";
+import "../styles/app.css";
 
 const Technology = (props) => {
 	

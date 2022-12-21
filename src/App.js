@@ -12,8 +12,6 @@ import Technology from "./components/technology.js";
 
 function App(props) {
 
-  
-
   return (
     <BrowserRouter className="App">
     
