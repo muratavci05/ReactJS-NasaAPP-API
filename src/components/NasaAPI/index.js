@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Image} from "antd";
+import "../style/style.css"
 
 const Mars = (props) => {
   const [apod, setApod] = useState([]);

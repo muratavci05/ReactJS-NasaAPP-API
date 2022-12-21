@@ -11,7 +11,7 @@ const Header = (props) => {
   };
 
   return (
-    <React.Fragment>
+    <div>
               <a href="#main" className="skip-to-content">Skip to content</a>
 
       <header className="primary-header flex pa" >
@@ -75,7 +75,7 @@ const Header = (props) => {
       </header>
 
       
-    </React.Fragment>
+    </div>
   );
 };
 

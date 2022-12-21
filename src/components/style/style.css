@@ -32,7 +32,7 @@
 }
 
 /* nasaData style end */
-/* Mars style start */
+/* nasaapods style start */
 
 .card{
     margin-top: -10px;
@@ -62,13 +62,3 @@
     margin-left: 100px;
     
 }
-
-/* header */
-
-/* .header{
-    height: 10vh; */
-   /*  background-image:url("/src/components/starts.jpeg"); */
-   /* background-color:#212529;
-   
-}
-*/

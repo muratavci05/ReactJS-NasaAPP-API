@@ -23,7 +23,7 @@ const Home = (props) => {
                     </p>
                 </div>
                 <div>
-                    <Link to="/destination" className="hover-effect large-button uppercase ff-serif text-dark bg-white">
+                    <Link to="/nasa-apod" className="hover-effect large-button uppercase ff-serif text-dark bg-white">
                     Explore
                     </Link>
                 </div>

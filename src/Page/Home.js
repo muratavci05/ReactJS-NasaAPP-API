@@ -6,7 +6,7 @@ const Home = (props) => {
    
 
     return(
-        <div>
+        <div className="home" style={{height:"100vh"}}>
             
                 <HomeComponent />
             
