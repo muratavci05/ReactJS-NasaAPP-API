@@ -1,0 +1,104 @@
+@use "./Variables/variable";
+@import "./media-queries";
+
+.technology {
+	background-image: url(../assents/technology/background-technology-mobile.jpg);
+
+	main.grid-container {
+		padding-inline: 0;
+	}
+
+	h2 {
+		letter-spacing: 2.36px;
+		margin-bottom: 10px;
+	}
+
+	.portrait {
+		display: none;
+	}
+
+	article,
+	h1 {
+		padding-left: 1rem;
+	}
+
+	main img {
+		max-width: 100%;
+	}
+
+	@include tablet {
+		background-image: url(../assents/technology/background-technology-tablet.jpg);
+		background-position: center center;
+
+		h2 {
+			letter-spacing: 2.7px;
+		}
+	}
+	@include desktop {
+		background-image: url(../assents/technology/background-technology-desktop.jpg);
+
+		.portrait {
+			display: block;
+		}
+		.landscape {
+			display: none;
+		}
+	}
+}
+
+main.grid-container--tech {
+	// centering with grid
+	grid-template-areas: "title" "image" "tabs" "content";
+	overflow: hidden;
+
+	@include desktop {
+		grid-template-columns: minmax(2rem, 1fr) auto repeat(2, minmax(0px, 80rem));
+
+		justify-items: start;
+		align-content: start;
+		grid-template-areas:
+			". title title title "
+			". tabs content image ";
+
+		picture {
+			max-width: 90%;
+			justify-self: end;
+			margin: 0;
+		}
+	}
+
+	.numbered-title {
+		grid-area: title;
+	}
+
+	.picture {
+		grid-area: image;
+		align-self: start;
+		justify-self: end;
+		margin: 0;
+		transition: opacity 0.5s ease-in-out;
+	}
+
+	.number-selectors {
+		grid-area: tabs;
+		@include desktop {
+			grid-gap: 2rem;
+		}
+	}
+
+	.tech-details {
+		grid-area: content;
+	}
+}
+
+.grid-container--tech.flow > *:where(:not(:first-child)) {
+	margin-top: 2rem;
+
+	@include tablet {
+		margin-top: 3.75rem;
+	}
+
+	@include desktop {
+		margin-top: 0;
+	}
+}

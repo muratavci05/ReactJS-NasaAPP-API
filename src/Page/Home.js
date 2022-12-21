@@ -1,15 +1,16 @@
-import React from "react";
-import Main from "../components/Home/index.js";
+import React, { useEffect } from "react";
+import HomeComponent from "../components/Home/index.js";
 
 
-const Home = () => {
+const Home = (props) => {
+   
 
     return(
-        <React.Fragment>
+        <div>
             
-                <Main/>
+                <HomeComponent />
             
-        </React.Fragment>
+        </div>
     )
 }
 

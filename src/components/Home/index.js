@@ -1,15 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../../src/styles/app.css";
+import "../../styles/app.css";
 
 
-const Main = (props) => {
-
+const Home = (props) => {
+    
     return(
-        <React.Fragment>
-            <main id="main" className="grid-container grid-container--home">
+       
+            <main id="main" className="grid-container grid-container--home"
+            >
                 <div>
                     <h1 className="text-accent fs-500 ff-sans-cond uppercase">
+                        So, you want to travel to
                         <span className="fs-900 ff-serif text-white letter-spacing-1 d-block">
                             Space
                         </span>
@@ -26,9 +28,8 @@ const Main = (props) => {
                     </Link>
                 </div>
             </main>
-        </React.Fragment>
-
+       
     )
 }
 
-export default Main;
+export default Home;

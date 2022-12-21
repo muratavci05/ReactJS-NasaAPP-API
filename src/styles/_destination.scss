@@ -1,0 +1,98 @@
+@use "./Variables/variable";
+@import "./media-queries";
+
+.destination {
+	background-image: url(../assents/destination/background-destination-mobile.jpg);
+
+	@include tablet {
+		background-image: url(../assents/destination/background-destination-tablet.jpg);
+		background-position: center center;
+	}
+	@include desktop {
+		background-image: url(../assents/destination/background-destination-desktop.jpg);
+	}
+
+	h1 {
+		letter-spacing: 2.7px;
+		span {
+			margin: 18px 0;
+		}
+
+		@include tablet {
+			letter-spacing: 3.38px;
+		}
+		@include desktop {
+			letter-spacing: 4.72px;
+		}
+	}
+
+	button {
+		padding: 0.4rem 0;
+		cursor: pointer;
+
+		&.underline-indicator[aria-selected="true"] {
+			color: white;
+			border-color: white;
+		}
+	}
+}
+
+main.grid-container--destination {
+	grid-template-areas: "title" "image" "tabs" "content";
+	overflow: hidden;
+
+	@include desktop {
+		justify-items: start;
+		align-content: start;
+		grid-template-areas: ". title title ." ". image tabs ." ". image content .";
+	}
+
+	.numbered-title {
+		grid-area: title;
+	}
+
+	picture {
+		grid-area: image;
+		max-width: 60%;
+		align-self: start;
+
+		@include desktop {
+			max-width: 80%;
+		}
+	}
+
+	.tab-list {
+		grid-area: tabs;
+	}
+
+	.destination-info {
+		grid-area: content;
+	}
+}
+
+div.destination-meta {
+	flex-direction: column;
+	border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+	padding-top: 2.5rem;
+	margin-top: 2.5rem;
+
+	@include tablet {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	@include desktop {
+		justify-content: start;
+		gap: calc(min(5vw, 6rem));
+	}
+
+	p {
+		font-size: 1.75rem;
+		margin-top: 1rem;
+	}
+}
+
+// fix this
+.grid-container--destination.flow > *:where(:not(:first-child)) {
+	margin-top: 2rem;
+}

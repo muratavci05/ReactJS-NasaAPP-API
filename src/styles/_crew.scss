@@ -1,0 +1,55 @@
+@use "./Variables/variable";
+@import "./media-queries";
+
+.crew {
+	background-image: url(../assents/crew/background-crew-mobile.jpg);
+
+	@include tablet {
+		background-image: url(../assents/crew/background-crew-tablet.jpg);
+		background-position: center center;
+	}
+	@include desktop {
+		background-image: url(../assents/crew/background-crew-desktop.jpg);
+	}
+
+	h2 {
+		color: hsla(0, 0%, 100%, 0.5);
+	}
+}
+
+main.grid-container--crew {
+	grid-template-areas: "title" "image" "tabs" "content";
+	overflow: hidden;
+
+	@include tablet {
+		grid-template-areas: "title" "content" "tabs" "image";
+		padding-bottom: 0;
+	}
+
+	@include desktop {
+		justify-items: start;
+		align-content: start;
+		grid-template-areas: ". title title ." ". content image ." ". tabs image .";
+
+		picture {
+			max-width: 90%;
+		}
+	}
+
+	.numbered-title {
+		grid-area: title;
+	}
+
+	picture {
+		grid-area: image;
+		border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+	}
+
+	.dot-selectors {
+		grid-area: tabs;
+	}
+
+	.crew-details {
+		grid-area: content;
+	}
+}

@@ -14,7 +14,7 @@ const Header = (props) => {
     <React.Fragment>
               <a href="#main" className="skip-to-content">Skip to content</a>
 
-      <header className="primary-header flex">
+      <header className="primary-header flex pa" >
 
         <div>
           <img src={logo} alt="Nasa Apod" className="logo"/>
@@ -38,15 +38,15 @@ const Header = (props) => {
             <li>
               <NavLink
                 to="/"
-                className={`${(isActive) => (isActive ? "active" : "")}
+                className={`${(isActive) => isActive ? "active" : ""}
               ff-sans-cond uppercase text-white letter-spacing-2 underline-indicator`}
               > 
                 Home</NavLink>
             </li>
             <li>
               <NavLink
-                to="/"
-                className={`${(isActive) => (isActive ? "active" : "")}
+                to="/destination"
+                className={`${(isActive) => isActive ? "active" : ""}
               ff-sans-cond uppercase text-white letter-spacing-2 underline-indicator`}
               >
                 {/* the aria-hidden is so that span won't be read to the screen reader */}
@@ -56,16 +56,16 @@ const Header = (props) => {
             </li>
             <li>
               <NavLink
-                to="/"
-                className={`${(isActive) => (isActive ? "active" : "")}
+                to="/crew"
+                className={`${(isActive) => isActive ? "active" : ""}
               ff-sans-cond uppercase text-white letter-spacing-2 underline-indicator`}
               > <span aria-hidden="true">02</span>
                 Crew</NavLink>
             </li>
             <li>
               <NavLink
-                to="/"
-                className={`${(isActive) => (isActive ? "active" : "")}
+                to="/technology"
+                className={`${(isActive) => isActive ? "active" : ""}
               ff-sans-cond uppercase text-white letter-spacing-2 underline-indicator`}
               > <span aria-hidden="true">03</span>
                 Technology</NavLink>

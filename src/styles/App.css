@@ -26,7 +26,7 @@
     position: relative;
     height: 1px;
     width: 45%;
-    margin-right: -2.5rem;
+    margin-right: -1.5rem;
     background: hsla(0deg, 0%, 100%, 0.25);
     order: 1;
   }
@@ -60,7 +60,7 @@ ul.primary-navigation {
   background: hsla(0deg, 0%, 100%, 0.2);
   transition: transform 0.5s ease-in-out;
 }
-@supports ((-webkit-backdrop-filter: blur 20px) or (backdrop-filter: blur 20px)) {
+@supports ((-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px))) {
   ul.primary-navigation {
     background: hsla(0deg, 0%, 100%, 0.1);
     -webkit-backdrop-filter: blur(20px);
@@ -69,7 +69,7 @@ ul.primary-navigation {
 }
 @media screen and (min-width: 560px) {
   ul.primary-navigation {
-    padding: 0 calc clamp(3rem, 7vw, 7rem);
+    padding: 0 clamp(3rem, 7vw, 7rem);
   }
 }
 @media (max-width: 560px) {
@@ -144,7 +144,7 @@ ul.primary-navigation {
   }
 }
 
-/* direct descendent just to make sure style doesn't leak out -  */
+/* direct descendent just to make sure style doesn't leak out */
 .underline-indicator {
   padding: 2.2rem 0;
   border: 0;
@@ -241,6 +241,258 @@ ul.primary-navigation {
 }
 .hover-effect:hover, .hover-effect:focus {
   box-shadow: 0px 0px 0px 2.5rem hsla(0deg, 0%, 100%, 0.1);
+}
+
+/* colors */
+/* font-sizes */
+/* font-families */
+.destination {
+  background-image: url(../assents/destination/background-destination-mobile.jpg);
+}
+@media screen and (min-width: 560px) {
+  .destination {
+    background-image: url(../assents/destination/background-destination-tablet.jpg);
+    background-position: center center;
+  }
+}
+@media screen and (min-width: 780px) {
+  .destination {
+    background-image: url(../assents/destination/background-destination-desktop.jpg);
+  }
+}
+.destination h1 {
+  letter-spacing: 2.7px;
+}
+.destination h1 span {
+  margin: 18px 0;
+}
+@media screen and (min-width: 560px) {
+  .destination h1 {
+    letter-spacing: 3.38px;
+  }
+}
+@media screen and (min-width: 780px) {
+  .destination h1 {
+    letter-spacing: 4.72px;
+  }
+}
+.destination button {
+  padding: 0.4rem 0;
+  cursor: pointer;
+}
+.destination button.underline-indicator[aria-selected=true] {
+  color: white;
+  border-color: white;
+}
+
+main.grid-container--destination {
+  grid-template-areas: "title" "image" "tabs" "content";
+  overflow: hidden;
+}
+@media screen and (min-width: 780px) {
+  main.grid-container--destination {
+    justify-items: start;
+    align-content: start;
+    grid-template-areas: ". title title ." ". image tabs ." ". image content .";
+  }
+}
+main.grid-container--destination .numbered-title {
+  grid-area: title;
+}
+main.grid-container--destination picture {
+  grid-area: image;
+  max-width: 60%;
+  align-self: start;
+}
+@media screen and (min-width: 780px) {
+  main.grid-container--destination picture {
+    max-width: 80%;
+  }
+}
+main.grid-container--destination .tab-list {
+  grid-area: tabs;
+}
+main.grid-container--destination .destination-info {
+  grid-area: content;
+}
+
+div.destination-meta {
+  flex-direction: column;
+  border-top: 1px solid hsla(0deg, 0%, 100%, 0.1);
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
+}
+@media screen and (min-width: 560px) {
+  div.destination-meta {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 780px) {
+  div.destination-meta {
+    justify-content: start;
+    gap: min(5vw, 6rem);
+  }
+}
+div.destination-meta p {
+  font-size: 1.75rem;
+  margin-top: 1rem;
+}
+
+.grid-container--destination.flow > *:where(:not(:first-child)) {
+  margin-top: 2rem;
+}
+
+/* colors */
+/* font-sizes */
+/* font-families */
+.crew {
+  background-image: url(../assents/crew/background-crew-mobile.jpg);
+}
+@media screen and (min-width: 560px) {
+  .crew {
+    background-image: url(../assents/crew/background-crew-tablet.jpg);
+    background-position: center center;
+  }
+}
+@media screen and (min-width: 780px) {
+  .crew {
+    background-image: url(../assents/crew/background-crew-desktop.jpg);
+  }
+}
+.crew h2 {
+  color: hsla(0deg, 0%, 100%, 0.5);
+}
+
+main.grid-container--crew {
+  grid-template-areas: "title" "image" "tabs" "content";
+  overflow: hidden;
+}
+@media screen and (min-width: 560px) {
+  main.grid-container--crew {
+    grid-template-areas: "title" "content" "tabs" "image";
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 780px) {
+  main.grid-container--crew {
+    justify-items: start;
+    align-content: start;
+    grid-template-areas: ". title title ." ". content image ." ". tabs image .";
+  }
+  main.grid-container--crew picture {
+    max-width: 90%;
+  }
+}
+main.grid-container--crew .numbered-title {
+  grid-area: title;
+}
+main.grid-container--crew picture {
+  grid-area: image;
+  border-bottom: 1px solid hsla(0deg, 0%, 100%, 0.1);
+}
+main.grid-container--crew .dot-selectors {
+  grid-area: tabs;
+}
+main.grid-container--crew .crew-details {
+  grid-area: content;
+}
+
+/* colors */
+/* font-sizes */
+/* font-families */
+.technology {
+  background-image: url(../assents/technology/background-technology-mobile.jpg);
+}
+.technology main.grid-container {
+  padding-inline: 0;
+}
+.technology h2 {
+  letter-spacing: 2.36px;
+  margin-bottom: 10px;
+}
+.technology .portrait {
+  display: none;
+}
+.technology article,
+.technology h1 {
+  padding-left: 1rem;
+}
+.technology main img {
+  max-width: 100%;
+}
+@media screen and (min-width: 560px) {
+  .technology {
+    background-image: url(../assents/technology/background-technology-tablet.jpg);
+    background-position: center center;
+  }
+  .technology h2 {
+    letter-spacing: 2.7px;
+  }
+}
+@media screen and (min-width: 780px) {
+  .technology {
+    background-image: url(../assents/technology/background-technology-desktop.jpg);
+  }
+  .technology .portrait {
+    display: block;
+  }
+  .technology .landscape {
+    display: none;
+  }
+}
+
+main.grid-container--tech {
+  grid-template-areas: "title" "image" "tabs" "content";
+  overflow: hidden;
+}
+@media screen and (min-width: 780px) {
+  main.grid-container--tech {
+    grid-template-columns: minmax(2rem, 1fr) auto repeat(2, minmax(0px, 80rem));
+    justify-items: start;
+    align-content: start;
+    grid-template-areas: ". title title title " ". tabs content image ";
+  }
+  main.grid-container--tech picture {
+    max-width: 90%;
+    justify-self: end;
+    margin: 0;
+  }
+}
+main.grid-container--tech .numbered-title {
+  grid-area: title;
+}
+main.grid-container--tech .picture {
+  grid-area: image;
+  align-self: start;
+  justify-self: end;
+  margin: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+main.grid-container--tech .number-selectors {
+  grid-area: tabs;
+}
+@media screen and (min-width: 780px) {
+  main.grid-container--tech .number-selectors {
+    grid-gap: 2rem;
+  }
+}
+main.grid-container--tech .tech-details {
+  grid-area: content;
+}
+
+.grid-container--tech.flow > *:where(:not(:first-child)) {
+  margin-top: 2rem;
+}
+@media screen and (min-width: 560px) {
+  .grid-container--tech.flow > *:where(:not(:first-child)) {
+    margin-top: 3.75rem;
+  }
+}
+@media screen and (min-width: 780px) {
+  .grid-container--tech.flow > *:where(:not(:first-child)) {
+    margin-top: 0;
+  }
 }
 
 /* colors */
@@ -476,6 +728,68 @@ ul.primary-navigation {
 }
 
 /* Components >>>  */
+.tab-list {
+  gap: 2rem;
+}
+
+.dot-indicator {
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  padding: 0.5em;
+  background-color: hsla(0deg, 0%, 100%, 0.25);
+  transition: backgroound-color 0.3s ease-in-out;
+  margin-top: 3rem;
+}
+
+.dot-indicator:hover,
+.dot-indicator:focus {
+  background-color: hsla(0deg, 0%, 100%, 0.5);
+}
+
+.dot-indicator[aria-selected=true] {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.number-selectors {
+  flex-direction: row;
+}
+@media screen and (min-width: 780px) {
+  .number-selectors {
+    flex-direction: column;
+  }
+}
+
+.number-selectors > * {
+  color: #fff;
+  background-color: #0b0d17;
+  border: 1px solid hsla(0deg, 0%, 100%, 0.25);
+  aspect-ratio: 1;
+  padding: 0;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 1em;
+  font-weight: normal;
+  font-family: var(--f-serif);
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+@media screen and (min-width: 560px) {
+  .number-selectors > * {
+    font-size: 1.5em;
+    width: 60px;
+  }
+}
+@media screen and (min-width: 780px) {
+  .number-selectors > * {
+    width: 80px;
+  }
+}
+
+.number-selectors [aria-selected=true] {
+  color: #0b0d17;
+  background-color: #fff;
+}
+
 *,
 *::before,
 *::after {

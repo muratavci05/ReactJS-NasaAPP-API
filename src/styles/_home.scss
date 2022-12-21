@@ -36,15 +36,15 @@
     @include desktop {
         /* takes bigger of the two values */
         padding-bottom: calc(max(6rem, 20vh));
-        align-items:end;
+        align-items: end;
 
         /* set which column they are */
         & > *:first-child {
-            grid-column:2;
+            grid-column: 2;
         }
 
         & > *:last-child {
-            grid-column:3;
+            grid-column: 3;
         }
     }
 }

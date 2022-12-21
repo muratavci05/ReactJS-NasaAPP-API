@@ -8,9 +8,7 @@
     border: 1px solid black;
     width: 800px;
     height: 100vh;
-     
-    
-
+ 
 }
 
 .explanationInfo{
@@ -67,8 +65,10 @@
 
 /* header */
 
-.header{
-    height: 10vh;
+/* .header{
+    height: 10vh; */
    /*  background-image:url("/src/components/starts.jpeg"); */
-   background-color:#212529;
+   /* background-color:#212529;
+   
 }
+*/

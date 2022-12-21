@@ -2,164 +2,165 @@
 @import "./media-queries";
 
 .skip-to-content {
-  position: absolute;
-  z-index: 9999;
-  background: $clr-white;
-  color: $clr-dark;
-  padding: 0.5rem 1rem;
-  margin-inline: auto;
-  transform: translateY(-101%);
-  transition: transform 0.2s ease-in;
+	position: absolute;
+	z-index: 9999;
+	background: $clr-white;
+	color: $clr-dark;
+	padding: 0.5rem 1rem;
+	margin-inline: auto;
+	transform: translateY(-101%);
+	transition: transform 0.2s ease-in;
 
-  &:focus {
-    transform: translateY(0);
-  }
+	&:focus {
+		transform: translateY(0);
+	}
 }
 
 .primary-header {
-  justify-content: space-between;
-  align-items: center;
+	justify-content: space-between;
+	align-items: center;
 
-  @include desktop {
-    &::after {
-      content: "";
-      display: block;
-      position: relative;
-      height: 1px;
-      width: 45%;
-      margin-right: -2.5rem;
-      background: hsla(0, 0%, 100%, 0.25);
-      order: 1;
-    }
-  }
+	@include desktop {
+		&::after {
+			content: "";
+			display: block;
+			position: relative;
+			height: 1px;
+			width: 45%;
+			margin-right: -1.5rem;
+			background: hsla(0, 0%, 100%, 0.25);
+			order: 1;
+		}
+	}
 }
 
 nav {
-  order: 2;
+	order: 2;
 }
+
 .logo {
-  margin: 0rem calc(clamp(1.5rem, 5vw, 3.5rem));
-  width: 40px;
+	margin: 0rem calc(clamp(1.5rem, 5vw, 3.5rem));
+	width: 40px;
 
-  @media (max-width: 560px) {
-    margin: 24px calc(clamp(1.5rem, 5vw, 3.5rem));
-  }
-  @include tablet {
-    width: auto;
-  }
+	@media (max-width: 560px) {
+		margin: 24px calc(clamp(1.5rem, 5vw, 3.5rem));
+	}
+
+	@include tablet {
+		width: auto;
+	}
 }
+
 ul.primary-navigation {
-    gap: calc(clamp(1.5rem,7vw, 3.3rem));
-    list-style: none;
-    margin: 0;
-    padding: 1rem 0;
-    align-items: center;
-    background: hsla(0, 0%, 100%, 0.2);
-    transition: transform 0.5s ease-in-out;
+	gap: calc(clamp(1.5rem, 7vw, 3.3rem));
+	list-style: none;
+	margin: 0;
+	padding: 1rem 0;
+	align-items: center;
+	background: hsla(0, 0%, 100%, 0.2);
+	transition: transform 0.5s ease-in-out;
 
-    @supports (backdrop-filter: blur (20px)){
-        background: hsla(0, 0%, 100%, 0.1);
-        backdrop-filter: blur(20px);
-    }
-    @include tablet {
-        padding: 0 calc (clamp(3rem,7vw, 7rem));
-    }
-    @media (max-width: 560px) {
-        gap: 0.5rem;
-        padding: calc(min(20rem, 18vh)) 2rem;
-        align-items: flex-start;
-        position: fixed;
-        flex-direction: column;
-        inset: 0 0 0 32%;
-        z-index: 1000;
-        transform:  translate(0%);
+	@supports (backdrop-filter: blur(20px)) {
+		background: hsla(0, 0%, 100%, 0.1);
+		backdrop-filter: blur(20px);
+	}
 
-        &.hidden {
-            transform: translate(100%);
-        }
+	@include tablet {
+		padding: 0 calc(clamp(3rem, 7vw, 7rem));
+	}
 
-    }
+	@media (max-width: 560px) {
+		gap: 0.5rem;
+		padding: calc(min(20rem, 18vh)) 2rem;
+		align-items: flex-start;
+		position: fixed;
+		flex-direction: column;
+		inset: 0 0 0 32%;
+		z-index: 1000;
+		transform: translate(0%);
 
-    @media (min-width: 560px) and (max-width: 780px) {
-        padding-inline: 3rem;
-    }
+		&.hidden {
+			transform: translate(100%);
+		}
+	}
 
-    @include desktop {
-        margin-block: 2rem;
-    }
+	@media (min-width: 560px) and (max-width: 780px) {
+		padding-inline: 3rem;
+	}
+
+	@include desktop {
+		margin-block: 2rem;
+	}
 }
 
 .mobile-nav-toggle {
-    display: none;
+	display: none;
 
-    @media (max-width: 560px) {
-        display: block;
-        position: absolute;
-        z-index: 2000;
-        right: 1rem;
-        top: 2rem;
-        background: transparent;
-        border: 0;
-        background-position: center center;
-        width: 1.5rem;
-        aspect-ratio: 1;
-        background-repeat: no-repeat;
-        cursor: pointer;
-        transition: background-image 0.5s ease;
+	@media (max-width: 560px) {
+		display: block;
+		position: absolute;
+		z-index: 2000;
+		right: 1rem;
+		top: 2rem;
+		background: transparent;
+		border: 0;
+		background-position: center center;
+		width: 1.5rem;
+		aspect-ratio: 1;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		transition: background-image 0.5s ease;
 
-        &.open {
-            background-image: url(../assents/shared/icon-hamburger.svg);
+		&.open {
+			background-image: url(../assents/shared/icon-hamburger.svg);
+		}
 
-        }
-
-        &.close {
-            background-image: url(../assents/shared/icon-close.svg);
-
-        }
-    }
+		&.close {
+			background-image: url(../assents/shared/icon-close.svg);
+		}
+	}
 }
 
 .primary-navigation li {
-    width: 100%;
-
+	width: 100%;
 }
+
 .primary-navigation a {
-    text-decoration: none;
-    display: block;
+	text-decoration: none;
+	display: block;
 }
+
 .primary-navigation a > span {
-    font-weight: 700;
-    margin-right: 0.5em;
+	font-weight: 700;
+	margin-right: 0.5em;
 
-    @media (min-width: 560px) and (max-width: 780px) {
-        display: none;
-
-    }
+	@media (min-width: 560px) and (max-width: 780px) {
+		display: none;
+	}
 }
 
-/* direct descendent just to make sure style doesn't leak out -  */
-
+/* direct descendent just to make sure style doesn't leak out */
 .underline-indicator {
-    padding: 2.2rem 0;
-    border: 0;
-    border-bottom: 0.2rem solid hsla(0, 0%, 100%, 0);
-    transition: border 0.5s ease;
-    background: 0;
+	padding: 2.2rem 0;
+	border: 0;
+	border-bottom: 0.2rem solid hsla(0, 0%, 100%, 0);
+	transition: border 0.5s ease;
+	background: 0;
 
-    @media (max-width: 560px) {
-        padding: 0.5rem 0;
-    }
+	@media (max-width: 560px) {
+		padding: 0.5rem 0;
+	}
 }
 
 .underline-indicator:hover,
 .underline-indicator:focus {
-    border-color: hsla(0, 0%, 100%, 0.5);
+	border-color: hsla(0, 0%, 100%, 0.5);
 }
 
 .underline-indicator.active,
 .underline-indicator[aria-selected="true"] {
-    @include tablet {
-        color: hsla(0, 0%, 100%, 1);
-        border-color: hsla(0, 0%, 100%, 1);
-    }
+	@include tablet {
+		color: hsla(0, 0%, 100%, 1);
+		border-color: hsla(0, 0%, 100%, 1);
+	}
 }
