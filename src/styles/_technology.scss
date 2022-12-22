@@ -1,12 +1,15 @@
 @use "./Variables/variable";
 @import "./media-queries";
 
+
+
 .technology {
 	background-image: url(../assets/technology/background-technology-mobile.jpg);
-
 	main.grid-container {
 		padding-inline: 0;
 	}
+
+	
 
 	h2 {
 		letter-spacing: 2.36px;
@@ -29,6 +32,8 @@
 	@include tablet {
 		background-image: url(../assets/technology/background-technology-tablet.jpg);
 		background-position: center center;
+		
+
 
 		h2 {
 			letter-spacing: 2.7px;

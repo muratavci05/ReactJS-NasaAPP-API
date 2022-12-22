@@ -23,8 +23,10 @@ const Mars = (props) => {
       .catch((err) => {
         console.log("hata mesajı", err);
       });
+
   }, []);
 
+  
     
   return (
     <React.Fragment>

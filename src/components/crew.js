@@ -90,6 +90,7 @@ const Crew = (props) => {
 	};
 	return (
 		<main id="main" className="grid-container grid-container--crew flow crew">
+			
 			<h1 className="fs-500 numbered-title">
 				<span aria-hidden="true">02</span> Meet your crew
 			</h1>

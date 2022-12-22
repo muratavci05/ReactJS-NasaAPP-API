@@ -23,6 +23,7 @@
 
 }
 
+
 .desc{
     color: rgb(103, 83, 52);
 }
@@ -60,5 +61,10 @@
 }
 .image{
     margin-left: 100px;
+    
+}
+.bgDark{
+    display: flex;
+    justify-content: center;
     
 }

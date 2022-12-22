@@ -273,6 +273,7 @@ ul.primary-navigation {
 }
 .destination h1 {
   letter-spacing: 2.7px;
+  margin-top: 130px;
 }
 .destination h1 span {
   margin: 18px 0;
@@ -371,6 +372,9 @@ div.destination-meta p {
   .crew {
     background-image: url(../assets/crew/background-crew-desktop.jpg);
   }
+}
+.crew h1 {
+  margin-top: 150px;
 }
 .crew h2 {
   color: hsla(0deg, 0%, 100%, 0.5);

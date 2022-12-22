@@ -61,10 +61,15 @@ const Technology = (props) => {
 
 	return (
 		<main id="main" className="grid-container grid-container--tech flow">
-			<h1 className="fs-500 numbered-title">
-				<span aria-hidden="true">03</span> Space Launch 101
+			<h1 className="fs-500 numbered-title hh1" 
+			>
+				<span aria-hidden="true">03</span> Space Launch 101 
 			</h1>
+			<p style={{ marginTop:"170px",position:"relative"}}>
+				
+			</p>
 			<div className="flex number-selectors">
+				
 				{Data.technology.map((item, index) => {
 					return (
 						<button
