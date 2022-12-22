@@ -11,7 +11,7 @@ const Header = (props) => {
   };
 
   return (
-    <div>
+    <div >
               <a href="#main" className="skip-to-content">Skip to content</a>
 
       <header className="primary-header flex pa" >

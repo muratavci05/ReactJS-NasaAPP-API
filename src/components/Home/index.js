@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/app.css";
 
 
 const Home = (props) => {
-    
+   
     return(
        
-            <main id="main" className="grid-container grid-container--home"
+            <main id="main" className="grid-container grid-container--home home"
             >
                 <div>
                     <h1 className="text-accent fs-500 ff-sans-cond uppercase">

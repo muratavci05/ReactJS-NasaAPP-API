@@ -6,8 +6,8 @@ const Home = (props) => {
    
 
     return(
-        <div className="home" style={{height:"100vh"}}>
-            
+        <div >
+                
                 <HomeComponent />
             
         </div>

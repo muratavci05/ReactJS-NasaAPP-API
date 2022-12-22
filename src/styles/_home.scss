@@ -3,20 +3,29 @@
 
 .home {
     background-image: url(../assents/home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    
 
     @include tablet {
         background-image: url(../assents/home/background-home-tablet.jpg);
         background-position: center center;
+        background-repeat: no-repeat;
+
     }
 
     @include desktop {
         background-image: url(../assents/home/background-home-desktop.jpg);
+        height: 100vh;
+
+        
 
     }
 
     h1 {
         letter-spacing: 2.7px;
         margin: 0 auto;
+        margin-top: 100px;
+        background-position: center center;
 
         span {
             margin: 18px 0;
@@ -24,6 +33,7 @@
 
         @include tablet {
             letter-spacing: 3.38px;
+
         }
 
         @include desktop {
@@ -50,6 +60,7 @@
 }
 
 .large-button {
+    margin-top: 40px;
     font-size: 1.25rem;
     display: inline-grid;
     place-items: center;

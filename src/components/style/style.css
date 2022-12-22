@@ -2,6 +2,7 @@
 
 .container{
     display: flex;
+    margin-top: 130px;
 }
 
 .containerAPIimg{
@@ -34,11 +35,10 @@
 /* nasaData style end */
 /* nasaapods style start */
 
-.card{
-    margin-top: -10px;
-}
 .col{
     margin-left: 75px;
+    margin-top: 130px;
+
 }
 
 

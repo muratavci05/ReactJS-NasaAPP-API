@@ -19,7 +19,8 @@
 .primary-header {
 	justify-content: space-between;
 	align-items: center;
-
+	margin-bottom: -130px; /* ! */
+ 
 	@include desktop {
 		&::after {
 			content: "";
@@ -27,9 +28,10 @@
 			position: relative;
 			height: 1px;
 			width: 45%;
-			margin-right: -1.5rem;
+			margin-left: -1.5rem;
 			background: hsla(0, 0%, 100%, 0.25);
 			order: 1;
+
 		}
 	}
 }
@@ -95,7 +97,6 @@ ul.primary-navigation {
 
 .mobile-nav-toggle {
 	display: none;
-
 	@media (max-width: 560px) {
 		display: block;
 		position: absolute;
@@ -110,6 +111,7 @@ ul.primary-navigation {
 		background-repeat: no-repeat;
 		cursor: pointer;
 		transition: background-image 0.5s ease;
+		
 
 		&.open {
 			background-image: url(../assents/shared/icon-hamburger.svg);

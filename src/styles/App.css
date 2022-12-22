@@ -18,6 +18,7 @@
 .primary-header {
   justify-content: space-between;
   align-items: center;
+  margin-bottom: -130px; /* ! */
 }
 @media screen and (min-width: 780px) {
   .primary-header::after {
@@ -26,7 +27,7 @@
     position: relative;
     height: 1px;
     width: 45%;
-    margin-right: -1.5rem;
+    margin-left: -1.5rem;
     background: hsla(0deg, 0%, 100%, 0.25);
     order: 1;
   }
@@ -176,21 +177,26 @@ ul.primary-navigation {
 /* font-families */
 .home {
   background-image: url(../assents/home/background-home-mobile.jpg);
+  background-repeat: no-repeat;
 }
 @media screen and (min-width: 560px) {
   .home {
     background-image: url(../assents/home/background-home-tablet.jpg);
     background-position: center center;
+    background-repeat: no-repeat;
   }
 }
 @media screen and (min-width: 780px) {
   .home {
     background-image: url(../assents/home/background-home-desktop.jpg);
+    height: 100vh;
   }
 }
 .home h1 {
   letter-spacing: 2.7px;
   margin: 0 auto;
+  margin-top: 100px;
+  background-position: center center;
 }
 .home h1 span {
   margin: 18px 0;
@@ -222,6 +228,7 @@ ul.primary-navigation {
 }
 
 .large-button {
+  margin-top: 40px;
   font-size: 1.25rem;
   display: inline-grid;
   place-items: center;
@@ -301,7 +308,7 @@ main.grid-container--destination .numbered-title {
 }
 main.grid-container--destination picture {
   grid-area: image;
-  max-width: 60%;
+  max-width: 80%;
   align-self: start;
 }
 @media screen and (min-width: 780px) {
@@ -788,6 +795,10 @@ main.grid-container--tech .tech-details {
 .number-selectors [aria-selected=true] {
   color: #0b0d17;
   background-color: #fff;
+}
+
+.number-selectors > button:hover {
+  border: 1px solid #fff;
 }
 
 *,
