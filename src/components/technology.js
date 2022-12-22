@@ -1,10 +1,10 @@
 import React, { useState} from "react";
-import Vehicle_portrait from "../assents/technology/image-launch-vehicle-portrait.jpg";
-import Vehicle_landscape from "../assents/technology/image-launch-vehicle-landscape.jpg";
-import Capsule_portrait from "../assents/technology/image-space-capsule-portrait.jpg";
-import Capsule_landscape from "../assents/technology/image-space-capsule-landscape.jpg";
-import Spaceport_portrait from "../assents/technology/image-spaceport-portrait.jpg";
-import Spaceport_landscape from "../assents/technology/image-spaceport-landscape.jpg";
+import Vehicle_portrait from "../assets/technology/image-launch-vehicle-portrait.jpg";
+import Vehicle_landscape from "../assets/technology/image-launch-vehicle-landscape.jpg";
+import Capsule_portrait from "../assets/technology/image-space-capsule-portrait.jpg";
+import Capsule_landscape from "../assets/technology/image-space-capsule-landscape.jpg";
+import Spaceport_portrait from "../assets/technology/image-spaceport-portrait.jpg";
+import Spaceport_landscape from "../assets/technology/image-spaceport-landscape.jpg";
 import "../styles/app.css";
 import Data from "../db.json";
 

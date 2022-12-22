@@ -2,14 +2,21 @@
 @import "./media-queries";
 
 .destination {
-	background-image: url(../assents/destination/background-destination-mobile.jpg);
+	background-image: url(../assets/destination/background-destination-tablet.jpg);
+	background-repeat: no-repeat;
+
 
 	@include tablet {
-		background-image: url(../assents/destination/background-destination-tablet.jpg);
+		background-image: url(../assets/destination/background-destination-tablet.jpg);
 		background-position: center center;
+		background-repeat: no-repeat;
 	}
 	@include desktop {
-		background-image: url(../assents/destination/background-destination-desktop.jpg);
+		background-image: url(../assets/destination/background-destination-desktop.jpg);
+		background-repeat: no-repeat;
+
+
+
 	}
 
 	h1 {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import logo from "../assents/shared/nasa-logo.svg";
-import { NavLink } from "react-router-dom";
+import logo from "../assets/shared/nasa-logo.svg";
+import { NavLink} from "react-router-dom";
 import "../styles/app.css";
 
 const Header = (props) => {
@@ -18,6 +18,8 @@ const Header = (props) => {
 
         <div>
           <img src={logo} alt="Nasa Apod" className="logo"/>
+          
+        
         </div>
 
         <button

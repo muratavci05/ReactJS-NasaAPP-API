@@ -1,13 +1,13 @@
 import React, { useRef, useState } from "react";
 import Data from "../db.json";
-import Moon_image from "../assents/destination/image-moon.png";
-import Moon_webp from "../assents/destination/image-moon.webp";
-import Mars_image from "../assents/destination/image-mars.png";
-import Mars_webp from "../assents/destination/image-mars.webp";
-import Europa_image from "../assents/destination/image-europa.png";
-import Europa_webp from "../assents/destination/image-europa.webp";
-import Titan_image from "../assents/destination/image-titan.png";
-import Titan_webp from "../assents/destination/image-titan.webp";
+import Moon_image from "../assets/destination/image-moon.png";
+import Moon_webp from "../assets/destination/image-moon.webp";
+import Mars_image from "../assets/destination/image-mars.png";
+import Mars_webp from "../assets/destination/image-mars.webp";
+import Europa_image from "../assets/destination/image-europa.png";
+import Europa_webp from "../assets/destination/image-europa.webp";
+import Titan_image from "../assets/destination/image-titan.png";
+import Titan_webp from "../assets/destination/image-titan.webp";
 
 const Destination =(props)=> {
 	
@@ -96,7 +96,7 @@ const Destination =(props)=> {
 	};
 
 	return (
-		<main id="main" className="grid-container grid-container--destination flow">
+		<main id="main" className="grid-container grid-container--destination flow destination">
 			{/* aria hidden is so that screen readers don't have to hear the span */}
 			<h1 className="fs-500 numbered-title">
 				<span aria-hidden="true">01</span> Pick your destination

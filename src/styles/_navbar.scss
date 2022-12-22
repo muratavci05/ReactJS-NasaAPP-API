@@ -41,6 +41,7 @@ nav {
 }
 
 .logo {
+	
 	margin: 0rem calc(clamp(1.5rem, 5vw, 3.5rem));
 	width: 40px;
 
@@ -114,11 +115,11 @@ ul.primary-navigation {
 		
 
 		&.open {
-			background-image: url(../assents/shared/icon-hamburger.svg);
+			background-image: url(../assets/shared/icon-hamburger.svg);
 		}
 
 		&.close {
-			background-image: url(../assents/shared/icon-close.svg);
+			background-image: url(../assets/shared/icon-close.svg);
 		}
 	}
 }

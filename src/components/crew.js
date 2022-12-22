@@ -1,13 +1,13 @@
 import React, { useState, useRef } from "react";
 import Data from "../db.json";
-import Douglas_png from "../assents/crew/image-douglas-hurley.png";
-import Douglas_webp from "../assents/crew/image-douglas-hurley.webp";
-import Mark_png from "../assents/crew/image-mark-shuttleworth.png";
-import Mark_webp from "../assents/crew/image-mark-shuttleworth.webp";
-import Victor_png from "../assents/crew/image-victor-glover.png";
-import Victor_webp from "../assents/crew/image-victor-glover.webp";
-import Anousheh_png from "../assents/crew/image-anousheh-ansari.png";
-import Anousheh_webp from "../assents/crew/image-anousheh-ansari.webp";
+import Douglas_png from "../assets/crew/image-douglas-hurley.png";
+import Douglas_webp from "../assets/crew/image-douglas-hurley.webp";
+import Mark_png from "../assets/crew/image-mark-shuttleworth.png";
+import Mark_webp from "../assets/crew/image-mark-shuttleworth.webp";
+import Victor_png from "../assets/crew/image-victor-glover.png";
+import Victor_webp from "../assets/crew/image-victor-glover.webp";
+import Anousheh_png from "../assets/crew/image-anousheh-ansari.png";
+import Anousheh_webp from "../assets/crew/image-anousheh-ansari.webp";
 import "../styles/app.css";
 
 
@@ -89,7 +89,7 @@ const Crew = (props) => {
 		}, 1000);
 	};
 	return (
-		<main id="main" className="grid-container grid-container--crew flow">
+		<main id="main" className="grid-container grid-container--crew flow crew">
 			<h1 className="fs-500 numbered-title">
 				<span aria-hidden="true">02</span> Meet your crew
 			</h1>

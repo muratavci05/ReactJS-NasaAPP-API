@@ -2,19 +2,19 @@
 @import "./media-queries";
 
 .home {
-    background-image: url(../assents/home/background-home-mobile.jpg);
+    background-image: url(../assets/home/background-home-tablet.jpg);
     background-repeat: no-repeat;
-    
+    background-position:0%;    
 
     @include tablet {
-        background-image: url(../assents/home/background-home-tablet.jpg);
+        background-image: url(../assets/home/background-home-tablet.jpg);
         background-position: center center;
         background-repeat: no-repeat;
 
     }
 
     @include desktop {
-        background-image: url(../assents/home/background-home-desktop.jpg);
+        background-image: url(../assets/home/background-home-desktop.jpg);
         height: 100vh;
 
         
