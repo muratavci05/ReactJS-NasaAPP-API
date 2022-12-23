@@ -1,11 +1,17 @@
 # ReactJS-NasaAPP-API
 
-Your users should be able to:
+ReactJS – NASA API & Space APP
+It is a responsive multi-page web project prepared with React JS and SCSS, with screen styling designed according to the device used.
 
-View the optimal layout for each of the website's pages depending on their device's screen size
-See hover states for all interactive elements on the page
-View each page and be able to toggle between the tabs to see new information
 ![](https://github.com/muratavci05/ReactJS-NasaAPP-API/blob/0bca56c619b91fcd14196184caad71f3a13672ca/src/assets/view.gif)
+
+NASA API
+· With 2 different API (apod) pull operations offered by NASA, connecting to the API and pulling the data to the screen were performed. (Axios and async/await structures are used separately)
+· And Desing React UI and API page were used.
+· CSS was used in styling on API pages.
+Space App
+· Designed using SCSS and ReactJS together.
+· Screen styling is created according to the device and is sensitive to mouse and screen usage. (responsive)
 
 My process
 Built with
