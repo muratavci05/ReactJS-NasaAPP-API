@@ -1,4 +1,5 @@
 # ReactJS-NasaAPP-API
+
 Your users should be able to:
 
 View the optimal layout for each of the website's pages depending on their device's screen size
@@ -11,6 +12,11 @@ Built with
 React.js
 Sass/SCSS
 React Hooks
+Axios
+And-desing of React
+Nasa Apod API
+Json API
+
 What I learned
 This is the first time I made a multi-page layout with React.js. I completed the project using react-router and react hooks. I also used the json file provided to utilize and display the information. I also focused on accessibility and made sure that the layout of my pages are accessible to both keyboard users and screen readers. I also learned a lot about using React and Sass together and found it easy to work with.
 
