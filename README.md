@@ -13,3 +13,6 @@ Sass/SCSS
 React Hooks
 What I learned
 This is the first time I made a multi-page layout with React.js. I completed the project using react-router and react hooks. I also used the json file provided to utilize and display the information. I also focused on accessibility and made sure that the layout of my pages are accessible to both keyboard users and screen readers. I also learned a lot about using React and Sass together and found it easy to work with.
+
+
+In order to display and tab through my buttons with the right and left arrow key, I used the useRef hook in order to reference the parent div of my buttons. and I used the map method to display my buttons along with the names from the json file
